@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Panda - Music</title>
+   <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+</head>
+<body>
+    <header>
+        <h1>Music</h1>
+        <!-- Add any additional content here -->
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/portfolio">Portfolio</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/music">Music</a></li>
+            <li><a href="/tech">Tech</a></li>
+            <li><a href="/video_games">Video Games</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Music Section</h2>
+            <p>Welcome to the Music Section of Pixel Panda! Here you'll find a collection of my original compositions, audio recordings, and a glimpse into my musical journey.</p>
+            <p>As a passionate musician, I find solace and joy in expressing myself through melodies and lyrics. Whether it's strumming chords on my guitar, composing melodies on the piano, or penning down lyrics that resonate with the soul, music is my ultimate form of self-expression.</p>
+            <p>Below, audio tracks, a video performances, and a photo gallery showcasing memorable moments from my musical endeavors. Enjoy exploring!</p>
+        </section>
+
+        <section>
+            <h2>Audio Tracks</h2>
+            <ul>
+                <li><audio controls><source src="placeholder_audio1.mp3" type="audio/mpeg">Your browser does not support the audio element.</audio></li>
+                <li><audio controls><source src="placeholder_audio2.mp3" type="audio/mpeg">Your browser does not support the audio element.</audio></li>
+                <li><audio controls><source src="placeholder_audio3.mp3" type="audio/mpeg">Your browser does not support the audio element.</audio></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Video Performance</h2>
+            <video controls><source src="placeholder_video.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+        </section>
+
+        <section>
+            <h2>Photo Gallery</h2>
+            <div class="gallery">
+                <img src="placeholder_image1.jpg" alt="Image 1">
+                <img src="placeholder_image2.jpg" alt="Image 2">
+                <img src="placeholder_image3.jpg" alt="Image 3">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Pixel Panda. All rights reserved.</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+</html>
