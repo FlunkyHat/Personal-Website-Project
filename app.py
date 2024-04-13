@@ -75,7 +75,7 @@ def tech():
 
 @app.route('/video_games')
 def video_games():
-    return render_template('video games.html')
+    return render_template('video_games.html')
 
 
 if __name__ == '__main__':

@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pixel Panda - Video Games</title>
-   <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
-
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
     <header>
@@ -35,31 +34,42 @@
 
         <section>
             <h2>Gameplay Videos</h2>
-            <video controls><source src="placeholder_gameplay1.mp4" type="video/mp4">Your browser does not support the video tag.</video>
-            <video controls><source src="placeholder_gameplay2.mp4" type="video/mp4">Your browser does not support the video tag.</video>
-            <video controls><source src="placeholder_gameplay3.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+            <h3 class="video-title">Video Title Placeholder</h3>
+            <div class="carousel">
+                <div class="viewport">
+                    <div class="video-container">
+                        <!-- Embedded YouTube videos will be loaded here -->
+                    </div>
+                </div>
+                <button class="prev">Previous</button>
+                <button class="next">Next</button>
+            </div>
         </section>
 
         <section>
             <h2>Screenshots</h2>
             <div class="gallery">
-                <img src="/../images/gameplay.png" alt="Screenshot 1">
-                <img src="/../images/gameplay2.png" alt="Screenshot 2">
-                <img src="/../images/gameplay3.png" alt="Screenshot 3">
+                <img src="{{ url_for('static', filename='images/Fortnite.png') }}" alt="Screenshot 0" style="width: 40%; height: 40%;">
+                <img src="{{ url_for('static', filename='images/Fortnite2.png') }}" alt="Screenshot 1" style="width: 40%; height: 40%;">
+                <img src="{{ url_for('static', filename='images/Fortnite3.png') }}" alt="Screenshot 2" style="width: 40%; height: 40%;">
+                <img src="{{ url_for('static', filename='images/Fortnite4.png') }}" alt="Screenshot 3" style="width: 40%; height: 40%;">
             </div>
         </section>
     </main>
 
-                <p>Exciting Pygame coming soon!</p>
-                <p>We're exploring advanced technology to bring this game directly to your browser - stay tuned!</p>
-            </div>
-        </div>
-   </div>
-</section>
     <footer>
         <p>&copy; 2024 Pixel Panda. All rights reserved.</p>
     </footer>
 
+    <!-- Modal -->
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <span id="closeButton" class="close">&times;</span>
+            <iframe id="videoFrame" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
     <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
 </body>
 </html>
