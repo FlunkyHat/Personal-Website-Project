@@ -1,3 +1,5 @@
+
+
 // Color Scheme
 document.body.style.backgroundColor = "#1a1a1a";
 document.body.style.color = "#ffffff";
@@ -5,10 +7,12 @@ document.body.style.color = "#ffffff";
 // Typography
 document.body.style.fontFamily = "Arial, sans-serif";
 document.body.style.fontSize = "16px";
+
 var headings = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
 headings.forEach(function(heading) {
     heading.style.fontWeight = "bold";
 });
+
 var links = document.querySelectorAll("a");
 links.forEach(function(link) {
     link.style.textDecoration = "none";
@@ -23,6 +27,8 @@ buttons.forEach(function(button) {
     button.style.border = "1px solid #333333";
     button.style.padding = "10px 20px";
     button.style.transition = "background-color 0.3s, color 0.3s";
+
+    // Hover Effects (handled in JavaScript)
     button.addEventListener("mouseover", function() {
         button.style.backgroundColor = "#555555";
     });

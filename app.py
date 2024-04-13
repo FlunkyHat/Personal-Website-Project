@@ -10,7 +10,7 @@ def about():
 
 @app.route('/animation')
 def animation():
-    return render_template('animation.html')
+    return render_template('tech/animation.html')
 
 
 @app.route('/contact')
@@ -20,27 +20,27 @@ def contact():
 
 @app.route('/css')
 def css():
-    return render_template('css.html')
+    return render_template('tech/css.html')
 
 
 @app.route('/demo1')
 def demo1():
-    return render_template('demo1.html')
+    return render_template('tech/demo1.html')
 
 
 @app.route('/demo2')
 def demo2():
-    return render_template('demo2.html')
+    return render_template('tech/demo2.html')
 
 
 @app.route('/frameworks')
 def frameworks():
-    return render_template('frameworks.html')
+    return render_template('tech/frameworks.html')
 
 
 @app.route('/html')
 def html():
-    return render_template('html.html')
+    return render_template('tech/html.html')
 
 
 @app.route('/')
@@ -65,7 +65,7 @@ def portfolio():
 
 @app.route('/responsive-design')
 def responsive_design():
-    return render_template('responsive-design.html')
+    return render_template('tech/responsive-design.html')
 
 
 @app.route('/tech')
