@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Panda - Video Games</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Video Games</h1>
+        <!-- Add any additional content here -->
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/portfolio">Portfolio</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/music">Music</a></li>
+            <li><a href="/tech">Tech</a></li>
+            <li><a href="/video_games">Video Games</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Video Games Section</h2>
+            <p>Welcome to the Video Games Section of Pixel Panda! Dive into the exciting world of Xbox gaming, where thrilling adventures and epic battles await.</p>
+            <p>As an avid Xbox gamer, I immerse myself in captivating storylines, compete in intense multiplayer matches, and explore vast open worlds filled with endless possibilities.</p>
+            <p>Below, you'll find placeholders for gameplay videos, screenshots, and a gallery showcasing my favorite Xbox gaming moments. Let's embark on unforgettable gaming adventures together!</p>
+        </section>
+
+        <section>
+            <h2>Gameplay Videos</h2>
+            <h3 class="video-title">Video Title Placeholder</h3>
+            <div class="carousel">
+                <div class="viewport">
+                    <div class="video-container">
+                        <!-- Embedded YouTube videos will be loaded here -->
+                    </div>
+                </div>
+                <button class="prev">Previous</button>
+                <button class="next">Next</button>
+            </div>
+        </section>
+
+        <section>
+            <h2>Screenshots</h2>
+            <div class="gallery">
+                <img src="{{ url_for('static', filename='images/Fortnite.png') }}" alt="Screenshot 0" style="width: 40%; height: 40%;">
+                <img src="{{ url_for('static', filename='images/Fortnite2.png') }}" alt="Screenshot 1" style="width: 40%; height: 40%;">
+                <img src="{{ url_for('static', filename='images/Fortnite3.png') }}" alt="Screenshot 2" style="width: 40%; height: 40%;">
+                <img src="{{ url_for('static', filename='images/Fortnite4.png') }}" alt="Screenshot 3" style="width: 40%; height: 40%;">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Pixel Panda. All rights reserved.</p>
+    </footer>
+
+    <!-- Modal -->
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <span id="closeButton" class="close">&times;</span>
+            <iframe id="videoFrame" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+</body>
+</html>
