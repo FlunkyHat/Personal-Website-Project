@@ -1,44 +1,68 @@
-/* ... Your existing CSS ... */
+/* Color Scheme */
+body {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
 
-/* Refactored Styles */
+/* Typography */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: green;
+}
+
+/* Buttons and Links */
+button, .button, a.button {
+    background-color: #333333;
+    color: #ffffff;
+    border: 1px solid #333333;
+    padding: 10px 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
 .card {
-    /* ... your existing card styles ... */
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    background-color: #333333;
+    color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
 }
 
+/* Forms and Input Fields */
+input[type='text'], input[type='email'], input[type='password'], textarea {
+    background-color: #333333;
+    color: #ffffff;
+    border: 1px solid #666666;
+    padding: 10px;
+}
+
+/* Footer */
 .footer {
-    /* ... your existing footer styles ... */
-    border-top: 1px solid #555555;
+    background-color: #333333;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
 }
 
-/* Potential Refinements */
 nav {
     background: linear-gradient(to right, #282828, #1a1a1a); /* Subtle gradient */
 }
 
-button:hover, .button:hover, a.button:hover {
-    background-color: #666666; /* Slightly darker hover */
-    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3); /* Subtle hover shadow */
-}
-/* ... Your existing CSS ... */
-
-/* Refactored Styles */
-.card {
-    /* ... your existing card styles ... */
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-}
-
-.footer {
-    /* ... your existing footer styles ... */
-    border-top: 1px solid #555555;
-}
-
-/* Potential Refinements */
-nav {
-    background: linear-gradient(to right, #282828, #1a1a1a); /* Subtle gradient */
+/* Buttons and Links (Hover Effects) */
+button, .button, a.button {
+    background-color: #333333;
+    color: #ffffff;
+    border: 1px solid #333333;
+    padding: 10px 20px;
+    transition: background-color 0.3s, color 0.3s; /* Keep the transition */
 }
 
 button:hover, .button:hover, a.button:hover {
-    background-color: #666666; /* Slightly darker hover */
-    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3); /* Subtle hover shadow */
+    background-color: #555555; /* Updated background color on hover */
 }
