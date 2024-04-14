@@ -2,26 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title><!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Basics</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
     <header>
         <h1>HTML Basics</h1>
-        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
     </header>
-        <nav>
+    <nav>
         <ul>
             <li><a href="/">Home</a></li>
             <li><a href="/portfolio">Portfolio</a></li>
             <li><a href="/about">About</a></li>
             <li><a href="/contact">Contact</a></li>
             <li><a href="/music">Music</a></li>
-            <li><a href="/tech">Tech</a></li>
+            <li><a href="/webdev">Web Development</a></li>
             <li><a href="/video_games">Video Games</a></li>
         </ul>
     </nav>
@@ -30,19 +26,32 @@
             <h2>Introduction to HTML</h2>
             <p>HTML (Hypertext Markup Language) is the standard markup language for creating web pages and web applications.</p>
             <p>Learn the basics of HTML, including tags, elements, and attributes, to create well-structured and semantic web documents.</p>
+
+            <p>HTML, or Hypertext Markup Language, is the standard language for creating web pages and applications. It uses tags, elements, and attributes to structure content. Tags are enclosed in angle brackets ("<>" symbols) and define different parts of the document's content.Elements consist of tags and the content they enclose, while attributes provide additional information about elements. HTML documents typically start with a <!DOCTYPE html> declaration, followed by <html>, <head>, and <body> elements. Understanding HTML basics helps create well-structured and semantic web documents, enhancing accessibility and user experience.</p>
+        </section>
+        <section>
+            <h2>HTML Basic Examples</h2>
+            <div class="gallery">
+                <img src="{{ url_for('static', filename='images/html.png') }}" alt="Screenshot 0" style="width: 60%; height: 60%;">
+            </div>
         </section>
     </main>
-<nav>
+    <section>
+            <h2>Web Development</h2>
+    <nav>
         <ul>
-                <li><a href="/css">CSS Fundamentals</a></li>
-                <li><a href="/frameworks">JavaScript Frameworks</a></li>
-                <li><a href="/responsive-design">Responsive Design</a></li>
+            <li><a href="/html">HTML Basics</a></li>
+                <li><a href="/css">CSS Basics</a></li>
+                <li><a href="/javascript">JavaScript</a></li>
+                <li><a href="/design">Responsive Design</a></li>
                 <li><a href="/animation">Animation Techniques</a></li>
-                <li><a href="/demo1">Demo 1</a></li>
-                <li><a href="/demo2">Demo 2</a></li>
+                <li><a href="/demo1">Tech Demo 1</a></li>
+                <li><a href="/demo2">Tech Demo 2</a></li>
         </ul>
-
+    </nav>
     <footer>
-        <p>&copy; 2024 Pixel Panda. All rights reserved.</p>
+        <p>© 2024 Pixel Panda. All rights reserved.</p>
     </footer>
-  <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+</html>

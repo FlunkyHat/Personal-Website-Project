@@ -35,7 +35,7 @@ def demo2():
 
 @app.route('/frameworks')
 def frameworks():
-    return render_template('tech/frameworks.html')
+    return render_template('tech/javascript.html')
 
 
 @app.route('/html')
@@ -63,14 +63,14 @@ def portfolio():
     return render_template('portfolio.html')
 
 
-@app.route('/responsive-design')
+@app.route('/design')
 def responsive_design():
-    return render_template('tech/responsive-design.html')
+    return render_template('tech/design.html')
 
 
-@app.route('/tech')
+@app.route('/webdev')
 def tech():
-    return render_template('tech.html')
+    return render_template('webdev.html')
 
 
 @app.route('/video_games')
