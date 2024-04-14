@@ -1,12 +1,12 @@
 // Array of YouTube video IDs and titles
 var videoIds = [
-    { id: "okKNce80gNw", title: "Microsoft Flight Simulator- This is your Captain speaking!" },
-    { id: "Vcsz-QMzlNc", title: "Chivalry 2- Double Kill." },
-    { id: "6SSBMg3xkKo", title: "Chivalry 2- One on One." },
-    { id: "aodbp3lkRpI", title: "Lego Fortnite-Escape Plan!" },
-    { id: "7ZrtIXELYY0", title: "Wu LongFallen Dynasty-Before the loot nerf." },
-    { id: "8xRVO71D11s", title: "Lego Fortnite-Directional & Stability Design Tests." },
-    { id: "Ft2PzFzYHBc", title: "Two Point Campus-At least they flushed." }
+    { id: "okKNce80gNw", title: "Microsoft Flight Simulator This Is Your Captain Speaking!" },
+    { id: "Vcsz-QMzlNc", title: "Chivalry 2  Double Kill." },
+    { id: "6SSBMg3xkKo", title: "Chivalry 2  One On One." },
+    { id: "aodbp3lkRpI", title: "Lego Fortnite Escape Plan!" },
+    { id: "7ZrtIXELYY0", title: "Wu LongFallen Dynasty- Monkey Farm Before The Loot Nerf." },
+    { id: "8xRVO71D11s", title: "Lego Fortnite Directional & Stability Design Tests." },
+    { id: "Ft2PzFzYHBc", title: "Two Point Campus At Least They Flushed." }
 ];
 
 // Index of the currently displayed video
