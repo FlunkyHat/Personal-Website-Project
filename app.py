@@ -33,7 +33,7 @@ def demo2():
     return render_template('tech/demo2.html')
 
 
-@app.route('/frameworks')
+@app.route('/javascript')
 def frameworks():
     return render_template('tech/javascript.html')
 
