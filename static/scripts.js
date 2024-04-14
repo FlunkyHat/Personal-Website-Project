@@ -4,7 +4,7 @@ var videoIds = [
     { id: "Vcsz-QMzlNc", title: "Chivalry 2  Double Kill." },
     { id: "6SSBMg3xkKo", title: "Chivalry 2  One On One." },
     { id: "aodbp3lkRpI", title: "Lego Fortnite Escape Plan!" },
-    { id: "7ZrtIXELYY0", title: "Wu LongFallen Dynasty- Monkey Farm Before The Loot Nerf." },
+    { id: "7ZrtIXELYY0", title: "Wu Long Fallen Dynasty Monkey Farm Before The Loot Nerf." },
     { id: "8xRVO71D11s", title: "Lego Fortnite Directional & Stability Design Tests." },
     { id: "Ft2PzFzYHBc", title: "Two Point Campus At Least They Flushed." }
 ];
