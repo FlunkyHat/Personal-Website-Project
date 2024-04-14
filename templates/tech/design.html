@@ -24,9 +24,14 @@
     <main>
         <section>
             <h2>Introduction To Responsive Design</h2>
-            <p>Responsive web design is an approach to web design that makes web pages render well on a variety of devices and window or screen sizes.</p>
-            <p>Learn the principles of responsive design, including fluid grids, flexible images, and media queries, to create websites that adapt to different devices and screen sizes.</p>
+            <p>Responsive web design is an approach that ensures web pages render well on a variety of devices and window or screen sizes.</p>
+            <p>Discover the principles of responsive design, including fluid grids, flexible images, and media queries. These principles help create websites that adapt to different devices and screen sizes.</p>
+            <p>Fluid grids are a key principle in responsive design. They use relative units like percentages instead of absolute units like pixels. This allows the layout to resize in relation to the screen size. For example, if you want three columns to take up 60%, 30%, and 10% of the screen width, they will maintain these proportions as the screen resizes.</p>
+            <p>Flexible images are also crucial in responsive design. These images can shrink or enlarge within their containing element to fit the layout. This is typically achieved using CSS properties such as max-width, height:auto, or sometimes using object-fit property.</p>
+            <p>Media queries are a feature of CSS that allow you to apply different styles depending on the characteristics of the device display, most commonly the width of the browser. For example, you might have a multi-column layout for wide screens and a single-column layout for narrow screens.</p>
+            <p>By combining these principles, you can create a website that looks good and works well on a wide range of devices and screen sizes. This is increasingly important in a world where internet traffic from mobile devices is rapidly overtaking that from desktop computers.</p>
         </section>
+        <img src="{{ url_for('static', filename='images/design.png') }}" alt="Design Principles" style="width: 35%; height: 35%;">
     </main>
     <section>
         <h2>Web Development</h2>
@@ -42,7 +47,7 @@
         </nav>
     </section>
     <footer>
-        <p>&copy; 2024 Pixel Panda. All rights reserved.</p>
+        <p>© 2024 Pixel Panda. All rights reserved.</p>
     </footer>
     <script src="{{ url_for('static', filename='scripts.js') }}"></script>
 </body>
