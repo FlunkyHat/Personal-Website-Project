@@ -24,10 +24,23 @@
     <main>
         <section>
             <h2>Introduction to Animation Techniques</h2>
-            <p>Animation adds life and personality to web pages, making them more engaging and interactive.</p>
-            <p>Explore various animation techniques using CSS, JavaScript, and libraries like GSAP to create stunning visual effects and dynamic user experiences.</p>
+            <p>Animation adds life and personality to web pages, making them more engaging and interactive. Explore various animation techniques using CSS, JavaScript, and libraries like GSAP to create stunning visual effects and dynamic user experiences.</p>
+            <p>The examples below include CSS, JavaScript, and GSAP.</p>
+
+            <p>CSS animations allow you to transition between two states over time. This can be done using keyframes and animation properties. Here’s a simple example of a CSS animation:</p>
+            <img src="{{ url_for('static', filename='images/animcss.png') }}" alt="Screenshot 0" style="width: 35%; height: 35%;">
+            <p>In this CSS animation example, we define a keyframes animation named "example". The animation changes the background color of a div element over 4 seconds. At the start (0%), the background color is red. At the halfway point (50%), the color changes to yellow. Finally, at the end of the animation (100%), the background color becomes green.</p>
+
+            <p>JavaScript can be used to manipulate CSS properties over time. The requestAnimationFrame method allows for smoother and more efficient animations. Here’s a simple example:</p>
+            <img src="{{ url_for('static', filename='images/animjavascript.png') }}" alt="Screenshot 1" style="width: 35%; height: 35%;">
+            <p>In this JavaScript animation example, we use the requestAnimationFrame method to create a smooth animation. The step function moves an element horizontally by changing its transform property. The animation stops after 2 seconds (2000 milliseconds).</p>
+
+            <p>GSAP is a powerful JavaScript library for creating high-performance animations. It works with any CSS property and provides advanced features like morphing, easing, and more. Here’s a simple GSAP animation:</p>
+            <img src="{{ url_for('static', filename='images/animgsap.png') }}" alt="Screenshot 2" style="width: 35%; height: 35%;">
+            <p>In this GSAP animation example, we use the gsap.to method to animate an element with the class "green". The element moves 200 pixels to the right (x: 200) over 2 seconds (duration: 2). The "ease: 'bounce'" option makes the animation end with a bounce effect.</p>
         </section>
     </main>
+
     <section>
         <h2>Web Development</h2>
         <nav>
@@ -41,9 +54,11 @@
             </ul>
         </nav>
     </section>
+
     <footer>
         <p>&copy; 2024 Pixel Panda. All rights reserved.</p>
     </footer>
+
     <script src="{{ url_for('static', filename='scripts.js') }}"></script>
 </body>
 </html>

@@ -50,6 +50,9 @@ input[type='text'], input[type='email'], input[type='password'], textarea {
     padding: 20px;
     text-align: center;
 }
+nav a {
+    font-size: 25px; /* Adjust the font size as needed */
+}
 
 nav {
     background: linear-gradient(to right, #282828, #1a1a1a); /* Subtle gradient */
