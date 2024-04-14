@@ -2,20 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title><!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
     <header>
         <h1>JavaScript</h1>
-        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
     </header>
-   </nav>
-        <nav>
+    <nav>
         <ul>
             <li><a href="/">Home</a></li>
             <li><a href="/portfolio">Portfolio</a></li>
@@ -31,59 +25,58 @@
             <h2>Introduction To JavaScript</h2>
             <p>JavaScript is a versatile programming language commonly used for web development. Key concepts include variables, data types, functions, conditional statements, and loops. Understanding these fundamentals is essential for building interactive and dynamic web applications.</p>
         </section>
-        <p>Variables: Variables are used to store data values. You can declare variables using the var, let, or const keywords.</p>
-         <section>
+        <section>
             <h2>Variables</h2>
             <div class="gallery">
                 <img src="{{ url_for('static', filename='images/variables.png') }}" alt="Screenshot 0" style="width: 60%; height: 60%;">
             </div>
+            <p>Variables: Variables are used to store data values. You can declare variables using the var, let, or const keywords.</p>
         </section>
         <section>
-        <p>Data Types: JavaScript supports various data types, including numbers, strings, booleans, arrays, objects, and more.</p>
-         <section>
             <h2>Data Types</h2>
             <div class="gallery">
                 <img src="{{ url_for('static', filename='images/datatypes.png') }}" alt="Screenshot 1" style="width: 60%; height: 60%;">
             </div>
+            <p>Data Types: JavaScript supports various data types, including numbers, strings, booleans, arrays, objects, and more.</p>
         </section>
-        </section>
-        <p>Functions: Functions are blocks of reusable code that perform a specific task. They can be declared using the function keyword.</p>
-         <section>
+        <section>
             <h2>Functions</h2>
             <div class="gallery">
                 <img src="{{ url_for('static', filename='images/functions.png') }}" alt="Screenshot 2" style="width: 60%; height: 60%;">
             </div>
+            <p>Functions: Functions are blocks of reusable code that perform a specific task. They can be declared using the function keyword.</p>
         </section>
         <section>
-        <p>Conditional Statements: Conditional statements allow you to execute different code based on certain conditions. The most common ones are if, else if, and else.</p>
             <h2>Conditional Statements</h2>
             <div class="gallery">
                 <img src="{{ url_for('static', filename='images/constants.png') }}" alt="Screenshot 3" style="width: 60%; height: 60%;">
             </div>
+            <p>Conditional Statements: Conditional statements allow you to execute different code based on certain conditions. The most common ones are if, else if, and else.</p>
         </section>
-            <p>Loops: Loops are used to execute a block of code repeatedly. JavaScript supports for, while, and do-while loops.</p>
-
+        <section>
             <h2>Loops</h2>
             <div class="gallery">
                 <img src="{{ url_for('static', filename='images/loops.png') }}" alt="Screenshot 4" style="width: 60%; height: 60%;">
             </div>
-
-            <section>
+            <p>Loops: Loops are used to execute a block of code repeatedly. JavaScript supports for, while, and do-while loops.</p>
+        </section>
+        <section>
             <h2>Web Development</h2>
-<nav>
-
-        <ul>
-                <li><a href="/html">HTML Basics</a></li>
-                <li><a href="/css">CSS Fundamentals</a></li>
-                <li><a href="/design">Responsive Design</a></li>
-                <li><a href="/animation">Animation Techniques</a></li>
-                <li><a href="/demo1">Demo 1</a></li>
-                <li><a href="/demo2">Demo 2</a></li>
-        </ul>
-    </nav>
+            <nav>
+                <ul>
+                    <li><a href="/html">HTML Basics</a></li>
+                    <li><a href="/css">CSS Fundamentals</a></li>
+                    <li><a href="/design">Responsive Design</a></li>
+                    <li><a href="/animation">Animation Techniques</a></li>
+                    <li><a href="/demo1">Demo 1</a></li>
+                    <li><a href="/demo2">Demo 2</a></li>
+                </ul>
+            </nav>
+        </section>
+    </main>
     <footer>
         <p>&copy; 2024 Pixel Panda. All rights reserved.</p>
     </footer>
-  <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
 </body>
 </html>
