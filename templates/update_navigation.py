@@ -1,7 +1,7 @@
 import os
 
 # Define the desired navigation order
-navigation_order = ['Home', 'About', 'Portfolio', 'Contact', 'Music', 'Web Development', 'Video Games']
+navigation_order = ['Home', 'About', 'Portfolio', 'Web Development', 'Music', 'Video Games', 'Contact']
 
 # Read the template HTML file with the desired navigation order
 with open('template.html', 'r') as f:
@@ -21,10 +21,11 @@ for root, dirs, files in os.walk(directory):
             with open(file_path, 'r') as f:
                 html_content = f.read()
 
-            # Replace the existing navigation section with the template navigation
-            # Assuming navigation links are enclosed within a <nav> element
+            # Find the start and end index of the navigation section
             start_index = html_content.find('<nav>')
             end_index = html_content.find('</nav>') + len('</nav>')
+
+            # Replace the existing navigation section with the template navigation
             modified_content = html_content[:start_index] + template_content + html_content[end_index:]
 
             # Write the modified content back to the HTML file
