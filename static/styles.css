@@ -27,6 +27,7 @@ button, .button, a.button {
     padding: 10px 20px;
     transition: background-color 0.3s, color 0.3s;
 }
+
 .card {
     background-color: #333333;
     color: #ffffff;
@@ -55,14 +56,6 @@ nav {
 }
 
 /* Buttons and Links (Hover Effects) */
-button, .button, a.button {
-    background-color: #333333;
-    color: #ffffff;
-    border: 1px solid #333333;
-    padding: 10px 20px;
-    transition: background-color 0.3s, color 0.3s; /* Keep the transition */
-}
-
 button:hover, .button:hover, a.button:hover {
     background-color: #555555; /* Updated background color on hover */
 }

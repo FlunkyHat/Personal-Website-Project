@@ -9,7 +9,6 @@
 <body>
     <header>
         <h1>Music</h1>
-        <!-- Add any additional content here -->
     </header>
 
     <nav>
@@ -29,7 +28,7 @@
             <h2>Music Section</h2>
             <p>Welcome to the Music Section of Pixel Panda! Here you'll find a collection of my original compositions, audio recordings, and a glimpse into my musical journey.</p>
             <p>As a passionate musician, I find solace and joy in expressing myself through melodies and lyrics. Whether it's strumming chords on my guitar, composing melodies on the piano, or penning down lyrics that resonate with the soul, music is my ultimate form of self-expression.</p>
-            <p>Below, audio tracks, a video performances, and a photo gallery showcasing memorable moments from my musical endeavors. Enjoy exploring!</p>
+            <p>Below are audio tracks, a video performance, and a photo gallery showcasing memorable moments from my musical endeavors. Enjoy exploring!</p>
         </section>
 
         <section>
@@ -48,9 +47,9 @@
         <section>
             <h2>Photo Gallery</h2>
             <div class="gallery">
-                <img src="placeholder_image1.jpg" alt="Image 1">
-                <img src="placeholder_image2.jpg" alt="Image 2">
-                <img src="placeholder_image3.jpg" alt="Image 3">
+                <img src="{{ url_for('static', filename='placeholder_image1.jpg') }}" alt="Image 1">
+                <img src="{{ url_for('static', filename='placeholder_image2.jpg') }}" alt="Image 2">
+                <img src="{{ url_for('static', filename='placeholder_image3.jpg') }}" alt="Image 3">
             </div>
         </section>
     </main>
