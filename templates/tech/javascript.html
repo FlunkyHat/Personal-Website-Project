@@ -10,19 +10,26 @@
         <h1>JavaScript</h1>
     </header>
     <nav>
-    <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/portfolio">Portfolio</a></li>
-        <li><a href="/webdev">Web Development</a></li>
-        <li><a href="/music">Music</a></li>
-        <li><a href="/video_games">Video Games</a></li>
-        <li><a href="/contact">Contact</a></li>
-    </ul>
-</nav>
-
-
-
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/portfolio">Portfolio</a></li>
+            <li>
+                <a href="/webdev">Web Development</a>
+                <ul class="submenu">
+                    <li><a href="/html">HTML Basics</a></li>
+                    <li><a href="/css">CSS Fundamentals</a></li>
+                    <li><a href="/javascript">JavaScript</a></li>
+                    <li><a href="/design">Responsive Design</a></li>
+                    <li><a href="/demo1">Demo 1</a></li>
+                    <li><a href="/demo2">Demo 2</a></li>
+                </ul>
+            </li>
+            <li><a href="/music">Music</a></li>
+            <li><a href="/video_games">Video Games</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
 
     <main>
         <section>
@@ -31,61 +38,41 @@
         </section>
         <section>
             <h2>Variables</h2>
-            <p>Variables: Variables are used to store data values. You can declare variables using the var, let, or const keywords.</p>
+            <p>Variables are used to store data values. You can declare variables using the var, let, or const keywords.</p>
             <div class="gallery">
                 <img src="{{ url_for('static', filename='images/variables.png') }}" alt="Screenshot 0" style="width: 35%; height: 35%;">
             </div>
-
         </section>
         <section>
             <h2>Data Types</h2>
-            <p>Data Types: JavaScript supports various data types, including numbers, strings, booleans, arrays, objects, and more.</p>
+            <p>JavaScript supports various data types, including numbers, strings, booleans, arrays, objects, and more.</p>
             <div class="gallery">
                 <img src="{{ url_for('static', filename='images/datatypes.png') }}" alt="Screenshot 1" style="width: 35%; height: 35%;">
             </div>
-
         </section>
         <section>
             <h2>Functions</h2>
-            Functions: Functions are blocks of reusable code that perform a specific task. They can be declared using the function keyword.</p>
+            <p>Functions are blocks of reusable code that perform a specific task. They can be declared using the function keyword.</p>
             <div class="gallery">
                 <img src="{{ url_for('static', filename='images/functions.png') }}" alt="Screenshot 2" style="width: 35%; height: 35%;">
             </div>
-
         </section>
         <section>
             <h2>Conditional Statements</h2>
-            <p>Conditional Statements: Conditional statements allow you to execute different code based on certain conditions. The most common ones are if, else if, and else.</p>
+            <p>Conditional statements allow you to execute different code based on certain conditions. The most common ones are if, else if, and else.</p>
             <div class="gallery">
                 <img src="{{ url_for('static', filename='images/constants.png') }}" alt="Screenshot 3" style="width: 35%; height: 35%;">
             </div>
-
         </section>
         <section>
             <h2>Loops</h2>
-            <p>Loops: Loops are used to execute a block of code repeatedly. JavaScript supports for, while, and do-while loops.</p>
+            <p>Loops are used to execute a block of code repeatedly. JavaScript supports for, while, and do-while loops.</p>
             <div class="gallery">
                 <img src="{{ url_for('static', filename='images/loops.png') }}" alt="Screenshot 4" style="width: 35%; height: 35%;">
             </div>
-
-        </section>
-        <section>
-            <h2>Web Development</h2>
-            <nav>
-                <ul>
-                    <li><a href="/html">HTML Basics</a></li>
-                    <li><a href="/css">CSS Fundamentals</a></li>
-                    <li><a href="/design">Responsive Design</a></li>
-                    <li><a href="/animation">Animation Techniques</a></li>
-                    <li><a href="/demo1">Demo 1</a></li>
-                    <li><a href="/demo2">Demo 2</a></li>
-                </ul>
-            </nav>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2024 Pixel Panda. All rights reserved.</p>
-    </footer>
+
     <script src="{{ url_for('static', filename='scripts.js') }}"></script>
 </body>
 </html>

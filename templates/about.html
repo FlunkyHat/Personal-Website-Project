@@ -10,19 +10,26 @@
     <header>
         <h1>About Pixel Panda</h1>
         <nav>
-    <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/portfolio">Portfolio</a></li>
-        <li><a href="/webdev">Web Development</a></li>
-        <li><a href="/music">Music</a></li>
-        <li><a href="/video_games">Video Games</a></li>
-        <li><a href="/contact">Contact</a></li>
-    </ul>
-</nav>
-
-
-
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/portfolio">Portfolio</a></li>
+                <li>
+                    <a href="/webdev">Web Development</a>
+                    <ul class="submenu">
+                        <li><a href="/html">HTML Basics</a></li>
+                        <li><a href="/css">CSS Fundamentals</a></li>
+                        <li><a href="/javascript">JavaScript</a></li>
+                        <li><a href="/design">Responsive Design</a></li>
+                        <li><a href="/demo1">Demo 1</a></li>
+                        <li><a href="/demo2">Demo 2</a></li>
+                    </ul>
+                </li>
+                <li><a href="/music">Music</a></li>
+                <li><a href="/video_games">Video Games</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
     <img src="{{ url_for('static', filename='images/panda.png') }}" alt="Panda" style="width:10%; height:10%;">
     <main>
@@ -32,9 +39,6 @@
             <p>Pixel Panda, brings a unique perspective shaped by the architect of this website, his personal journey with high functioning Autism and mild Epilepsy. His worldview is not just distinct, but filled with a sense of magic and mystery. It’s an adventure teeming with wonder and profound insights. He is passionate about music, technology, and video games. Currently, he is expanding his knowledge in Network Architecture, Web Development, and General Computing, with a special interest in Python programming. His diverse interests allow him to bring a unique perspective to their work and hobbies.</p>
         </section>
     </main>
-    <footer>
-        <p>© 2024 Pixel Panda. All rights reserved.</p>
-    </footer>
     <script src="{{ url_for('static', filename='scripts.js') }}"></script>
 </body>
 </html>

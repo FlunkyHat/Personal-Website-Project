@@ -12,16 +12,26 @@
     </header>
 
     <nav>
-    <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/portfolio">Portfolio</a></li>
-        <li><a href="/webdev">Web Development</a></li>
-        <li><a href="/music">Music</a></li>
-        <li><a href="/video_games">Video Games</a></li>
-        <li><a href="/contact">Contact</a></li>
-    </ul>
-</nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/portfolio">Portfolio</a></li>
+            <li>
+                <a href="/webdev">Web Development</a>
+                <ul class="submenu">
+                    <li><a href="/html">HTML Basics</a></li>
+                    <li><a href="/css">CSS Fundamentals</a></li>
+                    <li><a href="/javascript">JavaScript</a></li>
+                    <li><a href="/design">Responsive Design</a></li>
+                    <li><a href="/demo1">Demo 1</a></li>
+                    <li><a href="/demo2">Demo 2</a></li>
+                </ul>
+            </li>
+            <li><a href="/music">Music</a></li>
+            <li><a href="/video_games">Video Games</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
 
 
 
@@ -30,27 +40,13 @@
         <section>
             <h2>Explore Web Development</h2>
             <p>Welcome to the Web Development Section of Pixel Panda! Here, we'll guide you through the fundamentals of creating websites and web applications. From learning the basics of HTML and CSS to exploring the world of JavaScript, we've designed our resources to help you take your first steps in web development. Whether you're just starting out or looking to refresh your knowledge, our beginner-friendly guides will set you on the path to mastering web development.</p>
-            <p>Check out the links below to explore deeper into specific areas of interest:</p>
+            <p>This is work in progress, I will add more python embedded scripts and examples (turtle graphics and interactive scripts) as soon as I can!</p>
+            <p>For now please take a look at the navigation menu for more content. :)</p>
         </section>
 
-        <section>
-            <nav>
-                <ul>
-                    <li><a href="/html">HTML Basics</a></li>
-                    <li><a href="/css">CSS Basics</a></li>
-                    <li><a href="/javascript">JavaScript Basics</a></li>
-                    <li><a href="/design">Responsive Design</a></li>
-                    <li><a href="/animation">Animation Techniques</a></li>
-                    <li><a href="/demo1">Tech Demo 1</a></li>
-                    <li><a href="/demo2">Tech Demo 2</a></li>
-                </ul>
-            </nav>
-        </section>
     </main>
 
-    <footer>
-        <p>&copy; 2024 Pixel Panda. All rights reserved.</p>
-    </footer>
+
 
     <script src="{{ url_for('static', filename='scripts.js') }}"></script>
 </body>

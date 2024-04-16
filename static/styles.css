@@ -50,12 +50,50 @@ input[type='text'], input[type='email'], input[type='password'], textarea {
     padding: 20px;
     text-align: center;
 }
-nav a {
-    font-size: 25px; /* Adjust the font size as needed */
-}
 
 nav {
     background: linear-gradient(to right, #282828, #1a1a1a); /* Subtle gradient */
+    display: flex; /* Change display property to flex */
+    justify-content: space-between; /* Distribute items evenly */
+}
+
+nav ul {
+    list-style-type: none; /* Remove default list style */
+    display: flex; /* Change display property to flex */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+nav ul li {
+    margin-right: 20px; /* Add space between each navigation item */
+}
+nav ul li a {
+    font-size: 20px; /* Adjust the font size as needed */
+}
+/* Style the submenu */
+nav ul li ul.submenu {
+    display: none; /* Hide submenu by default */
+    position: absolute;
+    background-color: #333;
+    padding: 10px;
+}
+
+nav ul li:hover ul.submenu {
+    display: block; /* Show submenu on hover */
+}
+
+/* Style submenu links */
+nav ul li ul.submenu li {
+    display: block;
+}
+
+nav ul li ul.submenu li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li ul.submenu li a:hover {
+    color: #00ff00; /* Change color on hover */
 }
 
 /* Buttons and Links (Hover Effects) */

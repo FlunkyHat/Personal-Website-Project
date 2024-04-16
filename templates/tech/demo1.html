@@ -11,19 +11,26 @@
         <h1>Tech Demo 1</h1>
     </header>
     <nav>
-    <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/portfolio">Portfolio</a></li>
-        <li><a href="/webdev">Web Development</a></li>
-        <li><a href="/music">Music</a></li>
-        <li><a href="/video_games">Video Games</a></li>
-        <li><a href="/contact">Contact</a></li>
-    </ul>
-</nav>
-
-
-
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/portfolio">Portfolio</a></li>
+            <li>
+                <a href="/webdev">Web Development</a>
+                <ul class="submenu">
+                    <li><a href="/html">HTML Basics</a></li>
+                    <li><a href="/css">CSS Fundamentals</a></li>
+                    <li><a href="/javascript">JavaScript</a></li>
+                    <li><a href="/design">Responsive Design</a></li>
+                    <li><a href="/demo1">Demo 1</a></li>
+                    <li><a href="/demo2">Demo 2</a></li>
+                </ul>
+            </li>
+            <li><a href="/music">Music</a></li>
+            <li><a href="/video_games">Video Games</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
 
     <main>
         <section>
@@ -39,22 +46,7 @@
             </div>
         </section>
     </main>
-    <section>
-        <h2>Web Development</h2>
-        <nav>
-            <ul>
-                <li><a href="/html">HTML Basics</a></li>
-                <li><a href="/css">CSS Fundamentals</a></li>
-                <li><a href="/javascript">JavaScript</a></li>
-                <li><a href="/design">Responsive Design</a></li>
-                <li><a href="/animation">Animation Techniques</a></li>
-                <li><a href="/demo2">Demo 2</a></li>
-            </ul>
-        </nav>
-    </section>
-    <footer>
-        <p>&copy; 2024 Pixel Panda. All rights reserved.</p>
-    </footer>
+
     <script src="{{ url_for('static', filename='scripts.js') }}"></script>
 </body>
 </html>

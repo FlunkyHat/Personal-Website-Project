@@ -12,16 +12,26 @@
     </header>
 
     <nav>
-    <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/portfolio">Portfolio</a></li>
-        <li><a href="/webdev">Web Development</a></li>
-        <li><a href="/music">Music</a></li>
-        <li><a href="/video_games">Video Games</a></li>
-        <li><a href="/contact">Contact</a></li>
-    </ul>
-</nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/portfolio">Portfolio</a></li>
+            <li>
+                <a href="/webdev">Web Development</a>
+                <ul class="submenu">
+                    <li><a href="/html">HTML Basics</a></li>
+                    <li><a href="/css">CSS Fundamentals</a></li>
+                    <li><a href="/javascript">JavaScript</a></li>
+                    <li><a href="/design">Responsive Design</a></li>
+                    <li><a href="/demo1">Demo 1</a></li>
+                    <li><a href="/demo2">Demo 2</a></li>
+                </ul>
+            </li>
+            <li><a href="/music">Music</a></li>
+            <li><a href="/video_games">Video Games</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
 
 
 
@@ -48,20 +58,10 @@
             </div>
         </section>
 
-        <section>
-            <h2>Screenshots</h2>
-            <div class="gallery">
-                <img src="{{ url_for('static', filename='images/Fortnite.png') }}" alt="Screenshot 0" style="width: 40%; height: 40%;">
-                <img src="{{ url_for('static', filename='images/Fortnite2.png') }}" alt="Screenshot 1" style="width: 40%; height: 40%;">
-                <img src="{{ url_for('static', filename='images/Fortnite3.png') }}" alt="Screenshot 2" style="width: 40%; height: 40%;">
-                <img src="{{ url_for('static', filename='images/Fortnite4.png') }}" alt="Screenshot 3" style="width: 40%; height: 40%;">
-            </div>
-        </section>
+
     </main>
 
-    <footer>
-        <p>&copy; 2024 Pixel Panda. All rights reserved.</p>
-    </footer>
+
 
     <!-- Modal -->
     <div id="videoModal" class="modal">

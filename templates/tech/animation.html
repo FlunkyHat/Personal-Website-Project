@@ -11,19 +11,26 @@
         <h1>Animation Techniques</h1>
     </header>
     <nav>
-    <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/portfolio">Portfolio</a></li>
-        <li><a href="/webdev">Web Development</a></li>
-        <li><a href="/music">Music</a></li>
-        <li><a href="/video_games">Video Games</a></li>
-        <li><a href="/contact">Contact</a></li>
-    </ul>
-</nav>
-
-
-
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/portfolio">Portfolio</a></li>
+            <li>
+                <a href="/webdev">Web Development</a>
+                <ul class="submenu">
+                    <li><a href="/html">HTML Basics</a></li>
+                    <li><a href="/css">CSS Fundamentals</a></li>
+                    <li><a href="/javascript">JavaScript</a></li>
+                    <li><a href="/design">Responsive Design</a></li>
+                    <li><a href="/demo1">Demo 1</a></li>
+                    <li><a href="/demo2">Demo 2</a></li>
+                </ul>
+            </li>
+            <li><a href="/music">Music</a></li>
+            <li><a href="/video_games">Video Games</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
 
     <main>
         <section>
@@ -43,21 +50,21 @@
             <img src="{{ url_for('static', filename='images/animgsap.png') }}" alt="Screenshot 2" style="width: 50%; height: 50%;">
             <p>In this GSAP animation example, we use the gsap.to method to animate an element with the class "green". The element moves 200 pixels to the right (x: 200) over 2 seconds (duration: 2). The "ease: 'bounce'" option makes the animation end with a bounce effect.</p>
         </section>
-    </main>
 
-    <section>
-        <h2>Web Development</h2>
-        <nav>
-            <ul>
-                <li><a href="/html">HTML Basics</a></li>
-                <li><a href="/css">CSS Fundamentals</a></li>
-                <li><a href="/javascript">JavaScript</a></li>
-                <li><a href="/design">Responsive Design</a></li>
-                <li><a href="/demo1">Demo 1</a></li>
-                <li><a href="/demo2">Demo 2</a></li>
-            </ul>
-        </nav>
-    </section>
+        <section>
+            <h2>Web Development</h2>
+            <nav>
+                <ul>
+                    <li><a href="/html">HTML Basics</a></li>
+                    <li><a href="/css">CSS Fundamentals</a></li>
+                    <li><a href="/javascript">JavaScript</a></li>
+                    <li><a href="/design">Responsive Design</a></li>
+                    <li><a href="/demo1">Demo 1</a></li>
+                    <li><a href="/demo2">Demo 2</a></li>
+                </ul>
+            </nav>
+        </section>
+    </main>
 
     <footer>
         <p>&copy; 2024 Pixel Panda. All rights reserved.</p>
