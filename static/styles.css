@@ -35,14 +35,6 @@ button, .button, a.button {
     margin-bottom: 20px;
 }
 
-/* Forms and Input Fields */
-input[type='text'], input[type='email'], input[type='password'], textarea {
-    background-color: #333333;
-    color: #ffffff;
-    border: 1px solid #666666;
-    padding: 10px;
-}
-
 /* Footer */
 .footer {
     background-color: #333333;
